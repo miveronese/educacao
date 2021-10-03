@@ -12,7 +12,7 @@
             <br/>
             </p>
             <p class="lead"> Quer ser notificado/a quando os cursos estiverem disponíveis? Assine nossa lista de espera!</p>
-                <%= form_with model: @user do |form| %>
+                <%= form_with model: User.new, url: users_path do |form| %>
                     <% form.label :email%>
                     <div class="input-group mb-3" style="display: inline-flex;">
                         <%= form.email_field :email, 
@@ -22,10 +22,15 @@
                         <%=form.submit "Feito!", 
                             class: "input-group-text", 
                             id: "basic-addon2", 
-                            style: "color: #444444; background-color: lightblue" %>
+                            style: "color: #055160; background-color: #cff4fc" %>
                     </div>
                 <% end %>
             </p>
+            <% flash.each do |type, msg| %>
+                <div class="alert alert-info">
+                    <%= msg %>
+                </div>
+            <% end %>
         </div> 
     </div>     
 </div>
