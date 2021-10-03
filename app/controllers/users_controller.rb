@@ -5,7 +5,7 @@ class UsersController < ApplicationController
       if @user.save
         redirect_to root_url, notice: "Email enviado com sucesso!"
       else
-        redirect_to root_url, notice: @user.errors.full_messages[0]
+        redirect_to root_url, alert: @user.errors.full_messages[0]
       
       end
     end
