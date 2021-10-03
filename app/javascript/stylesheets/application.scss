@@ -1,2 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
-// @import "bootstrap/scss/bootstrap.scss";
+@import url('//fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
