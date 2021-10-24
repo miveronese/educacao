@@ -1,10 +1,10 @@
 <div class="main-content container col-xxl-8 px-4 py-3">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-4">
-            <%= image_pack_tag 'media/images/home.png', size: '390x394' %>
+        <div class="col-10 col-sm-8 col-lg-5">
+            <%= image_pack_tag 'media/images/home.png', size: '440x444' %>
         </div>
-        <div class="col-lg-8">
-            <h1 class="main-title lh-1 mb-3">Uma plataforma, novos caminhos</h1>
+        <div class="col-lg-7">
+            <h1 class="main-title lh-1 mb-3">Uma plataforma, vários caminhos</h1>
             <p class="lead">
                 Os tutoriais da <span class="tutto">Tutto</span> – feitos para iniciantes – são ideais </br>
                 para quem quer desenvolver novas habilidades </br> e dar os primeiros passos na área de tecnologia.
@@ -17,28 +17,29 @@
                         <%= form.email_field :email, 
                             class: "form-control", 
                             placeholder: "Digite seu email",  
-                            style: "border-color: lightblue" %>
-                        <%=form.submit "Quero acessar a Tutto", 
+                            style: "border-color: #FFE49C" %>
+                        <%=form.submit "Quero acessar", 
                             class: "input-group-text", 
                             id: "basic-addon2", 
-                            style: "color: #055160; background-color: #abe4b8" %>
+                            style: "color: brown; background-color: #FFE49C" %>
                     </div>
                 <% end %>
+                <div id="flash-messages">
+                    <% flash.each do |type, msg| %>
+                        <% if type == "alert" %>
+                            <div class="alert alert-danger">
+                                <%= msg %>
+                            </div>
+                        <% else %>
+                            <div class="alert alert-success">
+                                <%= msg %>
+                            </div>
+                        <% end %>      
+                    <% end %>
+                </div>
             </div>
 
-            <div id="flash-messages">
-                <% flash.each do |type, msg| %>
-                    <% if type == "alert" %>
-                        <div class="alert alert-danger">
-                            <%= msg %>
-                        </div>
-                    <% else %>
-                        <div class="alert alert-success">
-                            <%= msg %>
-                        </div>
-                    <% end %>      
-                <% end %>
-            </div>
+           
         </div> 
     </div>     
 </div>

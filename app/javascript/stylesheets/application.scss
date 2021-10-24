@@ -14,7 +14,16 @@ h1 {
   padding-left: 6px;
 }
 
+.navbar {
+  background-color: #23A8F2;
+}
+
 .tutto {
+  font-weight: 700;
+}
+
+.item {
+  margin: 10px;
   font-weight: 700;
 }
 
@@ -33,4 +42,9 @@ h1 {
 
 .form-container {
   margin-top: 60px;
+}
+
+.btn-light {
+  background-color: #FFE49C;
+  color: brown;
 }
