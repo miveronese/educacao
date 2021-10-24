@@ -1,17 +1,16 @@
-<div class="container col-xxl-8 px-4 py-5">
+<div class="main-content container col-xxl-8 px-4 py-3">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-10 col-sm-8 col-lg-4">
             <%= image_pack_tag 'media/images/home.png', size: '390x394' %>
         </div>
-        <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Dê os primeiros passos em tecnologia</h1>
+        <div class="col-lg-8">
+            <h1 class="main-title lh-1 mb-3">Uma plataforma, novos caminhos</h1>
             <p class="lead">
-                Tutoriais <b><i> gratuitos </i></b> feitos especialmente para <b><i> iniciantes</i></b>.<br/>
-                Para quem deseja desenvolver novas habilidades <br/> e quer trilhar um novo  caminho profissional.
-            <br/>
-            <br/>
+                Os tutoriais da <span class="tutto">Tutto</span> – feitos para iniciantes – são ideais </br>
+                para quem quer desenvolver novas habilidades </br> e dar os primeiros passos na área de tecnologia.
             </p>
-            <p class="lead"> Quer saber quando os cursos estiverem disponíveis? Assine nossa lista de espera!</p>
+            <div class="form-container col-lg-10">
+                <p class="call-to-action lead">Quer ser avisada/e/o quando novos tutoriais estiverem disponíveis?</p>
                 <%= form_with model: User.new, url: users_path do |form| %>
                     <% form.label :email%>
                     <div class="input-group mb-3" style="display: inline-flex;">
@@ -19,13 +18,14 @@
                             class: "form-control", 
                             placeholder: "Digite seu email",  
                             style: "border-color: lightblue" %>
-                        <%=form.submit "Feito!", 
+                        <%=form.submit "Quero acessar a Tutto", 
                             class: "input-group-text", 
                             id: "basic-addon2", 
-                            style: "color: #055160; background-color: #cff4fc" %>
+                            style: "color: #055160; background-color: #abe4b8" %>
                     </div>
                 <% end %>
-            </p>
+            </div>
+
             <div id="flash-messages">
                 <% flash.each do |type, msg| %>
                     <% if type == "alert" %>

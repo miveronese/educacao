@@ -1,6 +1,36 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('//fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+// @import url('//fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans+Condensed:wght@300;700&family=Rampart+One&family=Work+Sans:wght@600&family=Zen+Maru+Gothic:wght@400;500&display=swap');
+
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.logo {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 1.85rem;
+  padding-left: 6px;
+}
+
+.tutto {
+  font-weight: 700;
+}
+
+.main-content {
+  margin-top: 90px;
+}
+
+.main-title {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.call-to-action {
+  font-size: 1rem;
+}
+
+.form-container {
+  margin-top: 60px;
 }

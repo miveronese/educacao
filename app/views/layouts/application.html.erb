@@ -10,20 +10,29 @@
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <div class="container col-xxl-8 px-4 py-5">
+  <div class="container col-xxl-8 px-4 py-3">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-          <a class="navbar-brand" href="#">Mudar de Carreira</a>
+          <%= image_pack_tag 'media/images/eyes.png', size: '47x37' %>
+          <a class="logo navbar-brand" href="#">Tutto</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Tutoriais</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Planejamento</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Quem somos</a>
+                </li>
               </ul>
-              <%# <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-              </form> %>
+              <form class="d-flex">
+                <button class="btn btn-outline-success" type="submit">Inscreva-se agora</button>
+              </form>
           </div>
       </div>
     </nav>
@@ -38,6 +47,6 @@
   <div></div>
   </div>
   <footer class="py-3 my-4">
-    <p class="text-center text-muted">© 2021 Mudar de Carreira</p>
+    <p class="text-center text-muted">© 2021 Tutto</p>
   </footer>
 </html>

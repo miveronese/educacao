@@ -34,4 +34,13 @@ document.addEventListener("turbolinks:load", () => {
     popoverTriggerList.map(function(popoverTriggerEl) {
         return new Popover(popoverTriggerEl)
     })
+
+    // var flashDurationInSeconds = 5;
+    // var flashContainerId = 'flash-messages';
+    
+    // function removeFlashMessages() {
+    //     $('#' + flashContainerId).remove();
+    // }
+    
+    // setTimeout(removeFlashMessages, flashDurationInSeconds * 1000);
 })
